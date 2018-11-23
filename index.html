@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+ <body> 
+        <canvas id="c"></canvas>
+
+        <script src="kzymdn.js"></script>
+
+ 
+        <script src="script.js"></script>           
+        <div id="container" style="width: 31%;">           
+        <h1>A Basic Calculator</h1>         
+
+            <hr/><br/> 
+
+            <form name="calc">
+                <input type="text" name="output" placeholder="0" />
+                <br/>
+
+                <input type="button" value=" 1 " onclick="document.calc.output.value+='1'" title="1"/>
+                <input type="button" value=" 2 " onclick="document.calc.output.value+='2'" title="2"/>
+                <input type="button" value=" 3 " onclick="document.calc.output.value+='3'" title="3"/>
+                <input type="button" value=" / " onclick="document.calc.output.value+='/'" title="Divide"/>
+                <br/>
+                
+                <input type="button" value=" 4 " onclick="document.calc.output.value+='4'" title="4"/>
+                <input type="button" value=" 5 " onclick="document.calc.output.value+='5'" title="5"/>
+                <input type="button" value=" 6 " onclick="document.calc.output.value+='6'" title="6"/>
+                <input type="button" value=" X " onclick="document.calc.output.value+='*'" title="Multiply"/>
+                <br/>
+                
+                <input type="button" value=" 7 " onclick="document.calc.output.value+='7'" title="7"/>
+                <input type="button" value=" 8 " onclick="document.calc.output.value+='8'" title="8"/>
+                <input type="button" value=" 9 " onclick="document.calc.output.value+='9'" title="9"/>
+                <input type="button" value=" - " onclick="document.calc.output.value+='-'" title="Subtract"/>
+                <br/>
+                
+                <input type="button" value=" ( " onclick="document.calc.output.value+='('" title="("/>
+                <input type="button" value=" ) " onclick="document.calc.output.value+=')'" title=")"/>
+                <input type="button" value=" 0 " onclick="document.calc.output.value+='0'" title="0"/>
+                <input type="button" value=" + " onclick="document.calc.output.value+='+'" title="Add"/>
+                <br/>
+                
+                <input type="button" value=" c " onclick="document.calc.output.value=''" title="Clear">
+                <input type="button" value=" . " onclick="document.calc.output.value+='.'" title="Decimal"/>
+        <input type="button" value=" = " onclick="document.calc.output.value=eval(document.calc.output.value)" title="calculate"/>
+                <input type="button" value=" % " onclick="document.calc.output.value+='%'" title="Mod"/>
+                <br/>
+            </form>         
+          </div>
+         <br/><hr/>      
+    </body>
+</html>
